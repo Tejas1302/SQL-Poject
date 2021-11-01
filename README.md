@@ -2,8 +2,11 @@
 Establishing entity relationship as per following table definitions:
 
 1) Employee_Details Table:
+
 This table contains the information of the employees.
+
 Column Name, Data Type, Description as follows:
+
 Emp_ID INT (5) Employee ID (Primary Key)
 
 Emp_NAME VARCHAR (30) Name of the employee
@@ -18,8 +21,11 @@ Emp_CONT_NO VARCHAR (10) Contact Number of the employe
 
 
 2) Membership Table:
+
 This table contains the membership details of the customer or client.
+
 Column Name, Data Type, Description are as follows:
+
 M_ID INT Membership ID associated with the client (Primary Key)
 
 START_DATE TEXT Start date of the membership
@@ -27,8 +33,11 @@ START_DATE TEXT Start date of the membership
 END_DATE TEXT) End date of the membership
 
 3) Customer Table:
+
 This table contains the information of the customers or clients. 
+
 Column Name, Data Type, Description are as follows:
+
 Cust_ID INT (4) Client ID (Primary Key)
 
 Cust-NAME VARCHAR (30) Name of the client
@@ -45,8 +54,11 @@ Membership_M_ID INT Membership ID (Foreign Key)
 
 
 4) Payment_Details Table:
+
 This table contains the payment details.
+
 Column Name, Data Type, Description are as follows:
+
 PAYMENT_ID VARCHAR (40) Payment Unique ID (Primary Key)
 
 AMOUNT INT Price to be paid by the client
@@ -62,8 +74,11 @@ Shipment_SH_ID VARCHAR (6) Shipment ID (Foreign Key)
 Shipment_Client_C_ID INT (4) Client ID (Foreign Key)
 
 5) Shipment_Details Table:
+
 This table contains the shipment details.
+
 Column Name Data Type Description
+
 SD_ID VARCHAR (6) Shipment ID (Primary Key)
 
 SD_CONTENT VARCHAR (40) Type of shipping content 
@@ -83,8 +98,11 @@ DS_ADDR VARCHAR (100) Destination Address
 Customer_Cust_ID INT (4) Client ID (Foreign Key)
 
 6) Status table:
+
 This table contains the details about the delivery status.
+
 Column Name Data Type Description are as follows:
+
 CURRENT_ST VARCHAR (15) Current status of the shipment
 
 SENT_DATE TEXT Date when shipment was sent
@@ -95,8 +113,11 @@ SH_ID VARCHAR (6) Shipment ID (Primary Key)
 
 
 7) Employee Manages Shipment Table:
+
 This is a relationship table between the employee and the shipment table. 
+
 Column Name Data Type Description are as follows:
+
 Employee_E_ID INT (5) Employee ID (Foreign Key)
 
 Shipment_SH_ID VARCHAR (6) Shipment ID (Foreign Key)
